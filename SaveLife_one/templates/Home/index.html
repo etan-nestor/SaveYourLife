@@ -1,0 +1,1002 @@
+{% extends '../base.html' %} 
+
+
+{% load static %} 
+
+
+{% block Header_section%}
+
+<section class="hero-section hero-section-full-height">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-12 p-0">
+        <div
+          id="hero-slide"
+          class="carousel carousel-fade slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+
+                <div data-aos="fade-left" class="col-lg-12 text-center mb-4" style="position: absolute; top: 8rem; left: 14rem;">
+                    <h1 class="fw-bold pb-2 text-white">Save Your Life - Transform <br/>Your Life.</h1>
+                    <div class="underline"></div>
+                    <p class="lead text-white">Reserve your spot now to embark on  <br/> a journey towards a fulfilling life.</p>
+                </div>
+                
+              <img
+                src="{% static 'images/slide/slide1.jpg' %}"
+                class="carousel-image img-fluid"
+                alt="..."
+              />
+              <div data-aos="fade-up"
+                class="carousel-caption d-flex flex-column justify-content-end"
+              >
+                <h1 class='text-success'>be a Kind Heart</h1>
+
+                <p>Save Your Life for your help and reorganize your life</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+
+                <div data-aos="fade-right" class="col-lg-12 text-center mb-4" style="position: absolute; top: 5rem; right: 15rem;">
+                    <h1 class="fw-bold pb-2 text-white">Save Your Life - Acting for <br/> a Better World.</h1>
+                    <div class="underline"></div>
+                    <p class="lead text-white">Our commitment extends to improving living  conditions,<br/> protecting  abandoned children, and creating <br/> a brighter  for generations to come.<br/>Join us in our quest to build a positive and <br/> fulfilling world.</p>
+                </div>
+
+              <img
+                src="{% static 'images/slide/slide2.jpg' %}"
+                class="carousel-image img-fluid"
+                alt="..."
+              />
+
+              <div data-aos="fade-up"
+                class="carousel-caption d-flex flex-column justify-content-end"
+              >
+                <h1 class='text-success'>Non-profit</h1>
+
+                <p>You can support us to grow more</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+                
+                <div data-aos="fade-left" class="col-lg-12 text-center mb-4" style="position: absolute; top: 8rem; left: 16rem;">
+                    <h1 class="fw-bold pb-2 text-black">Save Your Life - Together, <br/> Let's Give Hope.</h1>
+                    <div class="underline"></div>
+                    <p class="lead text-black">Explore our activities focused on positivity, <br/> well-being, and personal growth. </p>
+                </div>
+
+              <img
+                src="{% static 'images/slide/slide3.jpg' %}"
+                class="carousel-image img-fluid"
+                alt="..."
+              />
+
+              <div data-aos="fade-up"
+                class="carousel-caption d-flex flex-column justify-content-end"
+              >
+                <h1 class='text-success'>Humanity</h1>
+
+                <p>Please tell your friends about our website to help them</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#hero-slide"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#hero-slide"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+
+{% block Welcome%}
+
+<section class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div data-aos="fade-up" class="col-lg-10 col-12 text-center mx-auto">
+        <h2 class="mb-5">Welcome to Save Your Life Organisation</h2>
+        <div class="underline"> </div>
+      </div>
+
+      <div data-aos="fade-right" class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+        <div class="featured-block text-center">
+          <a href="donate.html" class="d-block text-slime">
+            <i class="bi bi-person-fill featured-block-icon fs-3"></i>
+            <p class="featured-block-text fs-5">
+              Become a <strong>volunteer</strong>
+            </p>
+            <p class="fs-6">
+                Join us on a fulfilling volunteer journey—make a significant impact in transforming lives. Let's make a difference together!
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+        <div class="featured-block text-center">
+          <a href="donate.html" class="d-block text-slime">
+            <i class="bi bi-heart featured-block-icon fs-3"></i>
+            <p class="featured-block-text fs-5">
+              <strong>Caring</strong> Earth
+            </p>
+            <p class="fs-6">
+                "Caring Earth" signifies environmental stewardship. Join eco-initiatives, foster a world where nature thrives. Let's make a lasting impact together.
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+        <div class="featured-block text-center">
+          <a href="donate.html" class="d-block text-slime">
+            <i class="bi bi-cash featured-block-icon fs-3"></i>
+            <p class="featured-block-text fs-5">
+              Make a <strong>Donation</strong>
+            </p>
+            <p class="fs-6">
+                Your support is a lifeline. Donate to transform lives and foster positive change. Join us in making a meaningful impact. Let's make a lasting <br/>difference.
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div data-aos="fade-left" class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+        <div class="featured-block text-center">
+          <a href="donate.html" class="d-block text-slime">
+            <i class="bi bi-bookmark-fill featured-block-icon fs-3"></i>
+            <p class="featured-block-text fs-5">
+              <strong>Scholarship</strong> Program
+            </p>
+            <p class="fs-6">
+                Unlock a brighter future. Contribute to empower individuals through education. Let's invest in education and build a path to success together.
+            </p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %} 
+
+
+{% block barner1 %}
+
+<section class="cta-section section-padding section-bg">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div data-aos="fade-down" class="col-lg-5 col-12 ms-auto">
+        <h2 class="mb-0">
+          Make an impact. <br />
+          Save lives.
+        </h2>
+      </div>
+
+      <div data-aos="fade-up" class="col-lg-5 col-12">
+        <a href="#" class="me-4">Make a donation</a>
+
+        <a href="#section_4" class="custom-btn btn smoothscroll"
+          >Become a volunteer</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+
+{% block news %}
+
+<section class="news-section section-padding" id="section_5">
+  <div class="container">
+    <div class="row">
+      <div data-aos="fade-right" class="col-lg-12 col-12 mb-5">
+        <h2>Latest News</h2>
+      </div>
+
+      <div data-aos="fade-up-right" class="col-lg-7 col-12">
+        <div class="news-block">
+          <div class="news-block-top">
+            <a href="news-detail.html">
+              <img
+                src="{% static 'images/news/medium-shot-volunteers-with-clothing-donations.jpg' %}"
+                class="news-image img-fluid"
+                alt=""
+              />
+            </a>
+
+            <div class="news-category-block">
+              <a href="#" class="category-block-link"> Lifestyle, </a>
+
+              <a href="#" class="category-block-link"> Clothing Donation </a>
+            </div>
+          </div>
+
+          <div class="news-block-info">
+            <div class="d-flex mt-2">
+              <div class="news-block-date">
+                <p>
+                  <i class="bi-calendar4 custom-icon me-1"></i>
+                  October 12, 2036
+                </p>
+              </div>
+
+              <div class="news-block-author mx-5">
+                <p>
+                  <i class="bi-person custom-icon me-1"></i>
+                  By Us
+                </p>
+              </div>
+
+              <div class="news-block-comment">
+                <p>
+                  <i class="bi-chat-left custom-icon me-1"></i>
+                  32 Comments
+                </p>
+              </div>
+
+
+              <div class="news-block-comment">
+                <p>
+                  <i class="bi bi-share custom-icon me-2"></i>
+                  12 Shared
+                </p>
+              </div>
+
+            </div>
+
+            <div class="news-block-title mb-2">
+              <h4>
+                <a href="news-detail.html" class="news-block-title-link"
+                  >Clothing donation to urban area</a
+                >
+              </h4>
+            </div>
+
+            <div class="news-block-body">
+              <p>
+                Support urban communities by contributing to our clothing donation initiative. Your generosity can make a direct impact on those in need. Join us in providing warmth and comfort to urban areas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-left" class="col-lg-4 col-12 mx-auto">
+        <h5 class="mt-5 mb-3">Recent news</h5>
+
+        <div class="news-block news-block-two-col d-flex mt-4">
+          <div class="news-block-two-col-image-wrap">
+            <a href="news-detail.html">
+              <img
+                src="{% static 'images/news/africa-humanitarian-aid-doctor.jpg' %}"
+                class="news-image img-fluid"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="news-block-two-col-info">
+            <div class="news-block-title mb-2">
+              <h6>
+                <a href="news-detail.html" class="news-block-title-link"
+                  >Food donation area</a
+                >
+              </h6>
+            </div>
+
+            <div class="news-block-date">
+              <p>
+                <i class="bi-calendar4 custom-icon me-1"></i>
+                October 16, 2036
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-block news-block-two-col d-flex mt-4">
+          <div class="news-block-two-col-image-wrap">
+            <a href="news-detail.html">
+              <img
+                src="{% static 'images/news/close-up-happy-people-working-together.jpg' %}"
+                class="news-image img-fluid"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="news-block-two-col-info">
+            <div class="news-block-title mb-2">
+              <h6>
+                <a href="news-detail.html" class="news-block-title-link"
+                  >Volunteering Clean</a
+                >
+              </h6>
+            </div>
+
+            <div class="news-block-date">
+              <p>
+                <i class="bi-calendar4 custom-icon me-1"></i>
+                October 24, 2036
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-block d-flex flex-column">
+          <h5 class="mb-3">Categories</h5>
+
+          <a href="#" class="category-block-link">
+            Drinking water
+            <span class="badge">20</span>
+          </a>
+
+          <a href="#" class="category-block-link">
+            Food Donation
+            <span class="badge">30</span>
+          </a>
+
+          <a href="#" class="category-block-link">
+            Children Education
+            <span class="badge">10</span>
+          </a>
+
+          <a href="#" class="category-block-link">
+            Poverty Development
+            <span class="badge">15</span>
+          </a>
+
+          <a href="#" class="category-block-link">
+            Clothing Donation
+            <span class="badge">20</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock news %} 
+
+
+{% block barner2 %}
+
+<div class="jumbotron jumbotron-fluid bg-success text-white text-center">
+  <div class="container">
+    <h1 data-aos="fade-up" class="display-4">Save Your Life - Together, for a Better World</h1>
+
+    <div class="row justify-content-center mt-3">
+
+      <div data-aos="fade-up-right" class="col-3 col-md-2 mb-4">
+        <div
+          class="rounded-circle bg-white mx-auto d-block text-center shadow-lg circle-container"
+          style="width: 200px; height: 200px"
+        >
+          <h5 class="font-weight-bold text-success mb-2">Support</h5>
+          <img
+            src="https://img.freepik.com/photos-gratuite/groupe-amis-reunis_23-2148729701.jpg?w=996&t=st=1701748760~exp=1701749360~hmac=61198f6f963746d4554fcbf146d8b9f1261b646efe8380b35ffef826c4990c1b"
+            alt="Image Soutenir"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+
+      <div data-aos="fade-up" class="col-3 col-md-2 mb-4">
+        <div
+          class="rounded-circle bg-white mx-auto d-block text-center shadow-lg circle-container"
+          style="width: 200px; height: 200px"
+        >
+          <h5 class="font-weight-bold text-success mb-2">Act</h5>
+          <img
+            src="https://img.freepik.com/photos-gratuite/concept-innovation-vue-laterale-table-bois-main-tenant-cube-bois-icone_176474-9459.jpg?w=996&t=st=1701749127~exp=1701749727~hmac=4d2a8f9e497fccf81605d8fc10e732e9bcc3eaf573b78a6b8b23aa224aad9ce8"
+            alt="Image Agir"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+
+      <div data-aos="fade-up" class="col-3 col-md-2">
+        <div
+          class="rounded-circle bg-white mx-auto d-block text-center shadow-lg circle-container"
+          style="width: 200px; height: 200px"
+        >
+          <h5 class="font-weight-bold text-success mb-2">Commit</h5>
+          <img
+            src="https://img.freepik.com/photos-gratuite/vue-rapprochee-poignee-main-deux-hommes-affaires-costume-se-serrant-main_1163-4891.jpg?w=996&t=st=1701749598~exp=1701750198~hmac=3217b878f056821b6214fe9f1f7cf125a70e95e0238f4f2c2f34feb395afe628"
+            alt="Image Engager"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+
+      <div data-aos="fade-up-left" class="col-3 col-md-2">
+        <div
+          class="rounded-circle bg-white mx-auto d-block text-center shadow-lg circle-container"
+          style="width: 200px; height: 200px"
+        >
+          <h5 class="font-weight-bold text-success mb-2">Participate</h5>
+          <img
+            src="https://img.freepik.com/photos-gratuite/femme-conferenciere-afro-americaine-donnant-presentation-dans-hall-atelier-universitaire_155003-3579.jpg?w=996&t=st=1701749710~exp=1701750310~hmac=9dc89a91798e3f6322cd9bfc95d83aee07524c928c93ea5f2590f91e14b283f5"
+            alt="Image Participer"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block causes %}
+
+<section class="section-padding" id="section_3">
+  <div class="container">
+    <div class="row">
+      <div data-aos="fade-down" class="col-lg-12 col-12 text-center mb-4">
+        <h2>Our Causes</h2>
+        <div class="underline"> </div>
+      </div>
+
+      <div data-aos="fade-down-right" class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+        <div class="custom-block-wrap h-100 d-flex flex-column">
+          <img
+            src="https://img.freepik.com/photos-gratuite/groupe-enfants-africains-apprenant-ensemble_23-2148892523.jpg?w=996&t=st=1701750568~exp=1701751168~hmac=b848c180159c88539d1c7d9606f9e8bf56cc8ee823f194c8cdca009b5fc6e76c"
+            class="custom-block-image img-fluid"
+            alt=""
+          />
+
+          <div class="custom-block">
+            <div class="custom-block-body">
+              <h5 class="mb-3">Children Education</h5>
+
+              <p>
+                Empowering young minds for a brighter tomorrow through education.
+              </p>
+
+              <div class="progress mt-4">
+                <div
+                  class="progress-bar w-75"
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+
+              <div class="d-flex align-items-center my-2">
+                <p class="mb-0">
+                  <strong>Raised:</strong>
+                  $00,00
+                </p>
+
+                <p class="ms-auto mb-0">
+                  <strong>Goal:</strong>
+                  $32,000
+                </p>
+              </div>
+            </div>
+
+            <a href="donate.html" class="custom-btn btn">Donate now</a>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+        <div class="custom-block-wrap h-100 d-flex flex-column">
+          <img
+            src="https://img.freepik.com/photos-gratuite/bouchent-poignee-main-equipe_23-2148905520.jpg?w=1060&t=st=1701751646~exp=1701752246~hmac=fa1acae3b95b5305d3c849102b73b32e06623bf006760f18979e89703d363a10"
+            class="custom-block-image img-fluid"
+            alt=""
+          />
+
+          <div class="custom-block">
+            <div class="custom-block-body">
+              <h5 class="mb-3">Poverty Development</h5>
+
+              <p>
+                Fighting poverty, fostering development, creating lasting change.
+              </p>
+
+              <div class="progress mt-4">
+                <div
+                  class="progress-bar w-75"
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+
+              <div class="d-flex align-items-center my-2">
+                <p class="mb-0">
+                  <strong>Raised:</strong>
+                  $00,00
+                </p>
+
+                <p class="ms-auto mb-0">
+                  <strong>Goal:</strong>
+                  $45,000
+                </p>
+              </div>
+            </div>
+
+            <a href="donate.html" class="custom-btn btn">Donate now</a>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-down-left" class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+        <div class="custom-block-wrap h-100 d-flex flex-column">
+          <img
+            src="https://img.freepik.com/photos-gratuite/femme-africaine-versant-eau-dans-recipient-exterieur_23-2149021909.jpg?w=996&t=st=1701751666~exp=1701752266~hmac=841c0551298b59125a3d0bf44374a6ccb38c8f67b8fd912587b0cf0c238e0ba2"
+            class="custom-block-image img-fluid"
+            alt=""
+          />
+
+          <div class="custom-block">
+            <div class="custom-block-body">
+              <h5 class="mb-3">Supply drinking water</h5>
+
+              <p>
+                Quenching thirst, one drop at a time, for healthier communities.
+              </p>
+
+              <div class="progress mt-4">
+                <div
+                  class="progress-bar w-75"
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+
+              <div class="d-flex align-items-center my-2">
+                <p class="mb-0">
+                  <strong>Raised:</strong>
+                  $00,00
+                </p>
+
+                <p class="ms-auto mb-0">
+                  <strong>Goal:</strong>
+                  $21,000
+                </p>
+              </div>
+            </div>
+
+            <a href="donate.html" class="custom-btn btn">Donate now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %} 
+
+
+{% block history %}
+
+<section class="section-padding section-bg" id="section_2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div class="custom-text-box">
+          <h2 class="mb-2">Our Story</h2>
+
+          <h5 class="mb-3">Save Your Life, Non-Profit Organization</h5>
+
+          <p class="mb-0">
+            Since our inception on June 29, 2023, in Melbourne, Save Your Life has been committed to making a meaningful impact on people's lives worldwide. Our story is shaped by a steadfast dedication to transforming lives morally, financially, and personally.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="custom-text-box mb-lg-0">
+              <h5 class="mb-3">Our Mission</h5>
+
+              <p>
+                At Save Your Life, we empower individuals, enhance well-being, combat poverty, and bring hope to those in need.
+              </p>
+
+              <ul class="custom-list mt-2">
+                <li class="custom-list-item d-flex">
+                  <i class="bi-check custom-text-box-icon me-2"></i>
+                  children's education,
+                </li>
+
+                <li class="custom-list-item d-flex">
+                  <i class="bi-check custom-text-box-icon me-2"></i>
+                  community development,
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0">
+              <div class="counter-thumb">
+                <div class="d-flex">
+                  <span
+                    class="counter-number"
+                    data-from="1"
+                    data-to="2023"
+                    data-speed="1000"
+                  ></span>
+                  <span class="counter-number-text"></span>
+                </div>
+
+                <span class="counter-text">Founded</span>
+              </div>
+
+              <div class="counter-thumb mt-4">
+                <div class="d-flex">
+                  <span
+                    class="counter-number"
+                    data-from="1"
+                    data-to="002"
+                    data-speed="1000"
+                  ></span>
+                  <span class="counter-number-text">B</span>
+                </div>
+
+                <span class="counter-text">Donations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+        <img
+          src="https://img.freepik.com/photos-gratuite/personnes-au-bureau-pendant-journee-travail_23-2150690154.jpg?w=996&t=st=1701752786~exp=1701753386~hmac=dedad4bd894c7cd13caf7dbdeaa1bb448adab353850cf8127367c04af52eb35e"
+          class="custom-text-box-image img-fluid"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block events %}
+
+<section class="section-padding" id="events-section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 text-center mb-4">
+                <h1 class="fw-bold pb-2">Save Your Life Events</h1>
+                <div class="underline"> </div>
+                <p class="lead">Explore our upcoming events</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                <div class="card">
+                    <img src="https://img.freepik.com/photos-gratuite/jeune-femme-noire-lunettes-se-tient-exterieur-bras-croises-regardant-camera-groupe-diversifie-benevoles-soutient-programme-but-non-lucratif-dedie-lutte-contre-faim-aide-aux-personnes-dans-besoin_482257-70284.jpg?w=996&t=st=1701754377~exp=1701754977~hmac=5d50861462ae74e4d32923b64d546475f1708ec4e9be284b84fa6d5145e93921" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hope Gala</h5>
+                        <p class="card-text">Join us for the Hope Gala—an inspiring evening of unity to support those in need and create a brighter future.</p>
+                        <div class="event-details">
+                            <p class="card-text"><strong>Date:</strong> January 05, 2023</p>
+                            <p class="card-text"><strong>Location:</strong> Bobo Dioulasso</p>
+                        </div>
+                        <div class="interaction-buttons mt-3 d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-primary me-2">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-primary me-2">
+                                <i class="bi bi-chat"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-primary me-2">
+                                <i class="bi bi-share"></i>
+                            </button>
+                            <button class="btn btn-sm btn-success">
+                                Participate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                <div class="card">
+                    <img src="https://img.freepik.com/photos-gratuite/gros-plan-enfant-assis-table_23-2148761569.jpg?w=996&t=st=1701757039~exp=1701757639~hmac=daf6d593919fe91822fa300246d66802e2b6da3fadfe9b467e97d2f376e7103a" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Education Empowerment Summi</h5>
+                        <p class="card-text">Elevate minds at our Education Empowerment Summit, exploring innovative ideas to advance education and empower the next generation.</p>
+                        <div class="event-details">
+                            <p class="card-text"><strong>Date:</strong> June 04, 2023</p>
+                            <p class="card-text"><strong>Location:</strong> London </p>
+                        </div>
+                        <div class="interaction-buttons mt-3 d-flex justify-content-center">
+                            <button class="btn btn-sm btn-outline-primary me-2">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-primary me-2">
+                                <i class="bi bi-chat"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-primary me-2">
+                                <i class="bi bi-share"></i>
+                            </button>
+                            <button class="btn btn-sm btn-success">
+                                Participate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                <div class="card">
+                    <img src="https://img.freepik.com/photos-gratuite/kid-shot-moyen-portant-plaque-tete_23-2148761593.jpg?w=996&t=st=1701757151~exp=1701757751~hmac=1905e1593d872358902961785ae4e5ab5f8108f0331efea1735e2620e6e9224a" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Water for Life Campaign</h5>
+                        <p class="card-text">Be part of change with our Water for Life Campaign—help bring clean, life-giving water to communities in need.</p>
+                        <div class="event-details">
+                            <p class="card-text"><strong>Date:</strong> February 23, 2023</p>
+                            <p class="card-text"><strong>Location:</strong> Mexica</p>
+                        </div>
+                        <div class="interaction-buttons mt-3 d-flex justify-content-start">
+                            <button class="btn btn-sm btn-outline-primary me-2">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-primary me-2">
+                                <i class="bi bi-chat"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-primary me-2">
+                                <i class="bi bi-share"></i>
+                            </button>
+                            <button class="btn btn-sm btn-success">
+                                Participate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block barner3 %}
+
+<section class="banner-section" style="background-image: url('https://img.freepik.com/photos-gratuite/bouchent-poignee-main-equipe_23-2148905515.jpg?w=900&t=st=1701778345~exp=1701778945~hmac=323bf1dfe18170c15c4e77f89b06629fae378966ab2e31995ceb6edde3102f09');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- Left side with button -->
+                <a href="#" class="btn btn-success btn-lg btn-join-community">Join the Save Your Life Community</a>
+                <div class="mt-3">
+                    <i class="bi bi-facebook h2 text-primary custom-icon"></i>
+                    <i class="bi bi-twitter h2 text-warning custom-icon"></i>
+                    <i class="bi bi-instagram h2 text-danger custom-icon"></i>
+                    <!-- Additional icons with spacing -->
+                    <i class="bi bi-linkedin h2 text-primary custom-icon"></i>
+                    <i class="bi bi-youtube h2 text-warning custom-icon"></i>
+                </div>                
+                
+            </div>
+            <div class="col-lg-6">
+                <!-- Right side with text content -->
+                <div class="content-container bg-white rounded p-4 shadow text-center">
+                    <h3 class="mb-4">"<span class="text-success">Save Your Life Community</span>"</h3>
+            
+                    <div class="quote-container">
+                        <p class="quote-text fs-6">&#8220;Empowering lives, fostering unity—welcome to the Save Your Life Community, where positive change begins.&#8221;</p>
+                    </div>
+            
+                    <div class="rounded-container bg-light p-4 mt-3 shadow">
+                        <p class="font-weight-bold text-success fs-6">Join us in making a positive impact on the world!</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block volunteer %}
+
+<section class="volunteer-section section-padding" id="section_4">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-12">
+                <h2 class="text-black mb-4">Volunteer</h2>
+
+                <form class="custom-form volunteer-form mb-5 mb-lg-0" action="#" method="post" role="form">
+                    <h3 class="mb-4">Become a volunteer today</h3>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <input type="text" name="volunteer-name" id="volunteer-name" class="form-control" placeholder="Save Your Life" required>
+                        </div>
+
+                        <div class="col-lg-6 col-12">    
+                            <input type="email" name="volunteer-email" id="volunteer-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="saveyourlife@gmail.com" required>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <input type="text" name="volunteer-subject" id="volunteer-subject" class="form-control" placeholder="Subject" required>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="input-group input-group-file">
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                                
+                                <label class="input-group-text" for="inputGroupFile02">Upload your CV</label>
+
+                                <i class="bi-cloud-arrow-up ms-auto"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <textarea name="volunteer-message" rows="3" class="form-control" id="volunteer-message" placeholder="Comment (Optional)"></textarea>
+
+                    <button type="submit" class="form-control">Submit</button>
+                </form>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <img src="https://img.freepik.com/photos-gratuite/femme-hispanique-age-moyen-portant-t-shirt-benevole-chapeau-noel-se-detendre-souriant-yeux-fermes-faisant-geste-meditation-doigts-concept-yoga_839833-15873.jpg?w=996&t=st=1701770482~exp=1701771082~hmac=750e8b07b1c2982a4f624db1d37f2add099d026e8aa03496ef1e4f42458c9eb7" class="volunteer-image img-fluid" alt="">
+
+                <div class="custom-block-body text-center">
+                    <h4 class="text-black mt-lg-3 mb-lg-3">About Volunteering</h4>
+
+                    <p class="text-black">Discover the heart of giving back with our About Volunteering section—where actions speak louder than words in creating meaningful impact.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block customers %}
+
+<section class="testimonial-section section-padding section-bg">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 col-12 mx-auto">
+                <h2 class="mb-lg-3">What our cheerful customers say</h2>
+                
+                    <div id="testimonial-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                               <div class="carousel-caption">
+                                    <h4 class="carousel-title">Volunteering with Save Your Life reflects the commitment to creating a better world. Fulfilling and impactful.</h4>
+
+                                    <small class="carousel-name"><span class="carousel-name-title">Maria</span>, Boss</small>
+                               </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <h4 class="carousel-title">Being part of Save Your Life embodies the spirit of creating positive impact. Satisfying and meaningful.</h4>
+
+                                    <small class="carousel-name"><span class="carousel-name-title">Thomas</span>, Partner</small>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <h4 class="carousel-title">Engaging with Save Your Life mirrors a passion for making a difference. Gratifying and influential.</h4>
+
+                                    <small class="carousel-name"><span class="carousel-name-title">Jane</span>, Advisor</small>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <h4 class="carousel-title">Contributing to Save Your Life signifies a commitment to a brighter future. Rewarding and transformative.</h4>
+
+                                    <small class="carousel-name"><span class="carousel-name-title">Bob</span>, Entreprenuer</small>
+                               </div>
+                            </div>
+
+                              <ol class="carousel-indicators">
+                                   <li data-bs-target="#testimonial-carousel" data-bs-slide-to="0" class="active">
+                                        <img src="{% static 'images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg' %}" class="img-fluid rounded-circle avatar-image" alt="avatar">
+                                   </li>
+
+                                   <li data-bs-target="#testimonial-carousel" data-bs-slide-to="1" class="">
+                                        <img src="{% static 'images/avatar/portrait-young-redhead-bearded-male.jpg' %}" class="img-fluid rounded-circle avatar-image" alt="avatar">
+                                   </li>
+
+                                   <li data-bs-target="#testimonial-carousel" data-bs-slide-to="2" class="">
+                                        <img src="{% static 'images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg' %}" class="img-fluid rounded-circle avatar-image" alt="avatar">
+                                   </li>
+
+                                   <li data-bs-target="#testimonial-carousel" data-bs-slide-to="3" class="">
+                                        <img src="{% static 'images/avatar/studio-portrait-emotional-happy-funny.jpg' %}" class="img-fluid rounded-circle avatar-image" alt="avatar">
+                                   </li>
+                              </ol>
+                     </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block partner %}
+
+<section class="partners-banner bg-white shadow p-5">
+    <div class="container text-center">
+        <div class="col-lg-12 text-center mb-4">
+            <h1 class="fw-bold pb-2">Save Your Life Partners</h1>
+            <div class="underline"> </div>
+            <p class="lead">Explore our our Partner Services</p>
+        </div>
+        <div class="partner-logo-container">
+            <img src="https://img.freepik.com/vecteurs-libre/vecteur-degrade-logo-colore-oiseau_343694-1365.jpg?w=740&t=st=1701774418~exp=1701775018~hmac=d68947f427ec5263e751b62bb6eec7067c39b5d02a8636ee25381a88e53c9733" alt="Partner 1" class="partner-logo rounded-circle">
+            <p class="partner-name">Innovative</p>
+        </div>
+        <div class="partner-logo-container">
+            <img src="https://img.freepik.com/vecteurs-libre/modele-conception-stylo-plume-degrade_23-2149837194.jpg?w=740&t=st=1701774421~exp=1701775021~hmac=ee3a679fae35663cdd87b36de7034ec9dec8b4277730a50d2e10ba68f9390d8e" alt="Partner 2" class="partner-logo rounded-circle">
+            <p class="partner-name">Dynamic</p>
+        </div>
+        <div class="partner-logo-container">
+            <img src="https://img.freepik.com/vecteurs-libre/resume-logo-forme-flamme_1043-44.jpg?w=740&t=st=1701774445~exp=1701775045~hmac=03c8be416e00a16719adb7d11e4fce9390ab334625775d981304fa1638a673e6" alt="Partner 2" class="partner-logo rounded-circle">
+            <p class="partner-name">Timeless</p>
+        </div>
+        <div class="partner-logo-container">
+            <img src="https://img.freepik.com/vecteurs-libre/modele-logo-monogramme-conception-plate-dp_23-2151017176.jpg?w=740&t=st=1701774447~exp=1701775047~hmac=3d98945deab47b0b423c7cf6549069e7193182cd78156acb5d5c81c227a6053d" alt="Partner 2" class="partner-logo rounded-circle">
+            <p class="partner-name">Vibrant</p>
+        </div>
+        <div class="partner-logo-container">
+            <img src="https://img.freepik.com/vecteurs-libre/conception-logo-ac-design-plat_23-2149482027.jpg?w=740&t=st=1701774434~exp=1701775034~hmac=ac871deebba721c438122be8defd49d37c4451fe192ed4d3ee7a6d84ffcebab6" alt="Partner 2" class="partner-logo rounded-circle">
+            <p class="partner-name">Sleek</p>
+        </div>
+        <div class="partner-logo-container">
+            <img src="https://img.freepik.com/vecteurs-libre/logo-sante-mentale-degrade_23-2148820804.jpg?w=740&t=st=1701774442~exp=1701775042~hmac=636f18f24cad0e6d611153a224b3bc22945d8c44212567de4b19cee36ae66b2a" alt="Partner 2" class="partner-logo rounded-circle">
+            <p class="partner-name">Wholesome</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+

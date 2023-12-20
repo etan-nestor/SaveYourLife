@@ -1,0 +1,427 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SaveYourLife</title>
+
+    <!-- CSS FILES -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'css/lifeSave.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'js/Share.js' %}" rel="stylesheet">
+  <style>
+    .banner-section {
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .partners-banner {
+        background-color: #808080;
+    }
+
+    .partner-logo-container {
+        display: inline-block;
+        margin: 0 40px;
+    }
+
+    .partner-logo {
+        width: 100px;
+    }
+
+    .partner-name {
+        margin-top: 10px;
+    }
+    .btn-join-community {
+        background-color: #28a745;
+        border-color: #28a745;
+        margin-top:120px;
+    }
+    .custom-icon {
+        margin-left: 35px;
+    }
+    
+    .btn-join-community:hover {
+        background-color: #218838;
+        border-color: #218838;
+    }
+    
+    .content-container {
+        max-width: 600px;
+        margin-top:30px;
+    }
+
+    .underline {
+        border-bottom: 3px solid #28a745;
+        width: 50px;
+        margin: 0 auto 10px;
+    }
+    .jumbotron {
+        padding-top: 50px;
+    }
+
+    .jumbotron h1 {
+        margin-bottom: 20px;
+    }
+    .circle-container {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .circle-container img {
+        max-width: 80%;
+        margin-top:12px;
+        max-height: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+    }
+    .circle-container h5 {
+       padding-top: 15px;
+    }
+
+    {% comment %} css pour about {% endcomment %}
+
+    .header-section {
+        background-image: url('https://img.freepik.com/photos-gratuite/collegues-regardant-moniteur_23-2149370568.jpg?w=996&t=st=1701997739~exp=1701998339~hmac=218c0e7ac1919f674304c96e49a7e00dcdba11f6d5e3208827989ba957c538c9');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+    }
+  
+    .header-section h1 {
+        font-size: 3.5em;
+        margin-top: -145px;
+        margin-bottom:15px;
+        font-weight:bold;
+    }
+  
+    .header-section p {
+        font-size: 2em;
+        color:#fff;
+    }
+    .about-section h3 {
+        position: absolute;
+        right: 35rem;
+        bottom: 15rem;
+        font-size: 4em;
+        font-weight: bold;
+        margin-bottom: 4px;
+        animation: colorChange 1.5s infinite;
+      }
+
+    @keyframes colorChange {
+        0% {
+          color: #10ff10; /* Vert actuel */
+        }
+        25% {
+          color: #30ff30; /* Vert clair */
+        }
+        50% {
+          color: #50ff50; /* Blanc */
+        }
+        75% {
+          color: #ffffff; /* Une autre couleur de votre choix */
+        }
+        100% {
+          color: #108850; /* Revenir au vert actuel */
+    }
+
+      }
+  </style>
+</head>
+
+<body id="section_1">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-geo-alt me-2"></i>
+                        Australie, Melbourne South Melbourne.
+                    </p>
+
+                    <p class="d-flex mb-0">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:info@company.com">
+                            saveyourlife.organization@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                    <ul class="social-icon">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-twitter"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-facebook"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-instagram"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-youtube"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="{% static 'images/log.png' %}" class="logo img-fluid" alt="Kind Heart Charity">
+                <span>
+                    Save Your Life
+                    <small>Non-profit Organization</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="{% url 'home' %}">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="{% url 'about' %}">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_3">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_4">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_5">Events</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link click-scroll dropdown-toggle" href="#section_5"
+                            id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">News</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="news.html">News Listing</a></li>
+
+                            <li><a class="dropdown-item" href="news-detail.html">News Detail</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_6">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_6">
+                            <div class="language-select">
+                                <select class="selectpicker">
+                                 <option>En</option>
+                                 <option>Fr</option>
+                                 <option>Ru</option>
+                                 <option>Ar</option>
+                             </select>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Donate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+    {% comment %} Les composants de mon home page {% endcomment %}
+
+
+        {% block Header_section %} {% endblock %}
+        {% block Welcome %} {% endblock %}
+        {% block barner1 %} {% endblock %}
+        {% block news %} {% endblock %}
+        {% block barner2 %} {% endblock %}
+        {% block causes %} {% endblock %}
+        {% block history %} {% endblock %}
+        {% block events %} {% endblock %}
+        {% block barner3 %} {% endblock %}
+        {% block volunteer %} {% endblock %}
+        {% block customers %} {% endblock %}
+        {% block partner %} {% endblock %}
+
+
+    {% comment %} Les composants de mon about page {% endcomment %}
+
+        {% block Header_about %} {% endblock %}
+        {% block welcome_about %} {% endblock %}
+        {% block history_about %} {% endblock %}
+        {% block barner1_about %} {% endblock %}
+        {% block describe %} {% endblock %}
+        {% block barner2_about %} {% endblock %}
+        {% block choose_us %} {% endblock %}
+        {% block main_object %} {% endblock %}
+        {% block objectifs %} {% endblock %}
+        {% block stat %} {% endblock %}
+        {% block members %} {% endblock %}
+        {% block thrusted %} {% endblock %}
+
+    {% comment %} Les composants de mon Blog page {% endcomment %}
+
+        {% block header_blog %} {% endblock %}
+        {% block content_blog %} {% endblock %}
+        {% block post_blog %} {% endblock %}
+        {% block blogUp_content %} {% endblock %}
+
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-5">
+                    <img src="{% static 'images/log.png' %}" class="logo img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <h5 class="site-footer-title mb-3">Quick Links</h5>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Our Story</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Newsroom</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Causes</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Become a volunteer</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Partner with us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                    <h5 class="site-footer-title mb-3">Contact Infomation</h5>
+
+                    <p class="text-white d-flex mb-2">
+                        <i class="bi-telephone me-2"></i>
+
+                        <a href="tel: 120-240-9600" class="site-footer-link">
+                            + 226 78 40 79 46
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                            saveyourlife.organization@gmail.com
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex mt-3">
+                        <i class="bi-geo-alt me-2"></i>
+                        Australie, Melbourne South Melbourne
+                    </p>
+
+                    <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <p class="copyright-text mb-0">Copyright © 2024 <a href="#">Save Your Life</a> LifeSave Org.</p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-linkedin"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://youtube.com/templatemo" class="social-icon-link bi-youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'js/click-scroll.js' %}"></script>
+    <script src="{% static 'js/counter.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
