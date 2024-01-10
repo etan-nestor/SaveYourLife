@@ -15,6 +15,8 @@
     <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
     <link href="{% static 'css/lifeSave.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <link href="{% static 'css/mediaquery.css' %}" rel="stylesheet">
 
 
     <!-- Vendor CSS Files -->
@@ -24,7 +26,6 @@
   <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
   <link href="{% static 'js/Share.js' %}" rel="stylesheet">
-  <link href="{% static 'css/base.css' %}" rel="stylesheet">
   
 </head>
 
@@ -130,7 +131,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_6">Contact</a>
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link click-scroll" href="#section_6">
@@ -194,7 +195,10 @@
         {% block post_blog %} {% endblock %}
         {% block blogUp_content %} {% endblock %}
 
+    {% comment %} Les composants de mon acontact page {% endcomment %}
 
+    {% block header_contact %} {% endblock %}
+    {% block content_contact %} {% endblock %}
 
     </main>
 

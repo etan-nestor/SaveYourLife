@@ -23,6 +23,13 @@ def About(request):
 
 
 
+# Contact view
+
+def Contact(request):
+    return render (request, 'Contact/contact.html')
+
+
+
 # Blog view
 
 class List(ListView):
