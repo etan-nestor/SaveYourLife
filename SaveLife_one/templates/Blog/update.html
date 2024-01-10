@@ -6,6 +6,9 @@
 
 <div class="col-md-7 mx-auto ">
 
+    <a href="{% url 'blog' %}" class="fixedButton">View All Posts</a>
+    <a href="{% url 'blog' %}" class="fixeButton">View All Posts</a>
+
     <div style="margin-top:5rem;text-align:center;text-decoration:underline;">
         <h3>{{ article.title }}</h3>
     </div>
@@ -18,7 +21,7 @@
         </div>
         <div style="display:flex;justify-content:center;margin-top:20px;">
             <div style="text-align:center;padding:8px;background:#fff;width:50%;height:50px;border-radius:18px;margin-left:100px;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);">
-                <p style="color:blue;font-weight:bold;font-size:16px;">{{ article.date_added }}</p>
+                <p style="color:blue;font-weight:bold;font-size:16px;">{{ article.date_added }} <span style="color:508945;font-weight:bold;font-size:16px;">by Save Your Life </span></p>
             </div>
         </div>
     </div>
@@ -27,33 +30,37 @@
     <hr>
     <div>
         <div>
-            <div style="display:flex;">
-
-                <div style="background: linear-gradient(to bottom right, #8eff8e, #ffa500); width: 433px; height: 359px; border-radius: 45% 55% 27% 73% / 55% 42% 58% 45%; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);display: flex; justify-content: center; align-items: center;">
-                    <h3 style="text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); text-align:center">Commentaires</h3>
+            {% for comment in comments %}
+            <article style="margin-bottom: 15px;">
+                <div class="message-container">
+                    <div class="message">
+                        <p class="author-date"><span class="author-name">{{ comment.name }}</span> <span>{{ comment.date_added }}</span></p>
+                        <p class="comment-body">{{ comment.body }}</p>
+                    </div>
                 </div>
-                {% for comment in comments %}
-                <article style="">
-                    <p>{{comment.name}}<span>{{comment.date_added}}</span></p>
-                    <p>{{comment.body}}</p>
-                {% empty %}
-                    <p>Pas de commentaires</p>
-                </article>
-
+            </article>
+            
+        {% empty %}
+            <div class="text-center mb-3" style="cursor:pointer;">
+                <img src="{% static 'images/no.png' %}" alt="No comments image" style="width: 200px;" />
+                <p style="font-weight:bold;color:red;">No Comment(s)</p>
             </div>
-           {% endfor %}
-            <div>
-                <div>
-                    <h3>Ajouter un commentaires</h3>
-                </div>
-                <form action="" method="POST">
+        {% endfor %}
+            <hr>
+            <div class="mx-auto">
+                <div class="rounded bg-success p-3 mb-5">
+                    <h5 class="text-white" style="font-weight:bold;text-transform:uppercase;">Add Comment</h5>
+                    <form action="" method="POST" class="mt-3">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <button type='submit'>Commenter</button>
-                </form>
+                    <button type="submit" class="btn btn-primary btn-sm px-4">Comment</button>
+                    </form>
+                </div>
             </div>
+        
         </div>
 
         {% endblock %}
     </div>
-    </div>
+
+</div>
