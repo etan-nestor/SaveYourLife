@@ -29,6 +29,12 @@ def Contact(request):
     return render (request, 'Contact/contact.html')
 
 
+# Events view
+
+def Events(request):
+    return render (request, 'Events/events.html')
+
+
 
 # Blog view
 
