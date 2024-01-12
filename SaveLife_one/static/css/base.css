@@ -1,31 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* contact elements */
+
+
+.heading{
+    font-size:20px;
+    font-weight:600;
+    color:#3D5AFE;
+
+}
+
+  .line1{
+    color:#000;
+    font-size:12px;
+
+  }
+   .line2{
+    color:#000;
+    font-size:12px;
+    
+  }
+   .line3{
+    color:#000;
+    font-size:12px;
+    
+  }
+
+  .cards{
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+    
+
+  }
+    
+
+
+.cards:hover{
+
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1);
+}
+
 
 .get-in-touch {
     max-width: 800px;
     margin: 50px auto;
     position: relative;
-  
-  }
-  .get-in-touch .title {
+
+}
+
+.get-in-touch .title {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 3.2em;
     line-height: 48px;
     padding-bottom: 48px;
-       color: #5543ca;
-      background: #5543ca;
-      background: -moz-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
-      background: -webkit-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
-      background: linear-gradient(to right,#f4524d  0%,#5543ca  100%) !important;
-      -webkit-background-clip: text !important;
-      -webkit-text-fill-color: transparent !important;
-  }
-  
-  .contact-form .form-field {
+    color: #5543ca;
+    background: #5543ca;
+    background: -moz-linear-gradient(left, #f4524d 0%, #5543ca 100%) !important;
+    background: -webkit-linear-gradient(left, #f4524d 0%, #5543ca 100%) !important;
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.contact-form .form-field {
     position: relative;
     margin: 32px 0;
-  }
-  .contact-form .input-text {
+}
+
+.contact-form .input-text {
     display: block;
     width: 100%;
     height: 36px;
@@ -34,16 +88,19 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
-  }
-  .contact-form .input-text:focus {
+}
+
+.contact-form .input-text:focus {
     outline: none;
-  }
-  .contact-form .input-text:focus + .label,
-  .contact-form .input-text.not-empty + .label {
+}
+
+.contact-form .input-text:focus+.label,
+.contact-form .input-text.not-empty+.label {
     -webkit-transform: translateY(-24px);
-            transform: translateY(-24px);
-  }
-  .contact-form .label {
+    transform: translateY(-24px);
+}
+
+.contact-form .label {
     position: absolute;
     left: 20px;
     bottom: 11px;
@@ -54,21 +111,387 @@
     cursor: text;
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
-    transition: transform .2s ease-in-out, 
-    -webkit-transform .2s ease-in-out;
-  }
-  .contact-form .submit-btn {
+    transition: transform .2s ease-in-out,
+        -webkit-transform .2s ease-in-out;
+}
+
+.contact-form .submit-btn {
     display: inline-block;
     background-color: #000;
-     background-image: linear-gradient(125deg,#a72879,#064497);
+    background-image: linear-gradient(125deg, #a72879, #064497);
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
     padding: 8px 16px;
     border: none;
-    width:200px;
+    width: 200px;
     cursor: pointer;
+}
+
+/* event header */
+
+
+.page-header-events {
+    background: url(https://easetemplate.com/free-website-templates/hike/images/pageheader.jpg) no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.page-caption {
+    padding-top: 170px;
+    padding-bottom: 174px;
+}
+
+.page-title {
+    font-size: 46px;
+    line-height: 1;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-section {
+    position: relative;
+    bottom: 60px;
+}
+
+.card-block {
+    padding: 80px;
+}
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+/* services header */
+
+.bg-cover {
+    background-size: cover !important;
+}
+
+/* services heroes */
+
+.box {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.our-services {
+    margin-top: 75px;
+    padding-bottom: 30px;
+    padding: 0 60px;
+    min-height: 198px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+}
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center
+}
+
+.our-services:hover h4,
+.our-services:hover p {
+    color: #fff
+}
+
+.speedup:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%)
+}
+
+.settings:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+}
+
+.privacy:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
+}
+
+.backups:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%)
+}
+
+.ssl:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+}
+
+.database:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+}
+/* services laws */
+
+
+/* news elements */
+
+.container-news {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
   }
   
+  .title-news {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    color: #51ec2a;
+    font-size: 120px;
+    font-weight: 600;
+  }
   
+  .title-large-news {
+    height: 130px;
+    margin-left: -5px;
+    opacity: 0.2;
+  }
+  
+  .img-container-news {
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -2.8px;
+    margin-right: -2.8px;
+    width: 170px;
+    vertical-align: top;
+    border-radius: 0px 0px 80px 80px;
+    animation-name: flow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: -2s;
+    transition-timing-function: cubic-bezier(0,.57,1,.46);
+    box-shadow: 2px 2px 16px 2px rgba(0,0,0,0.5);
+  }
+  
+  .second-animation-news {
+    animation-delay: -1.5s;
+  }
+  
+  .third-animation-news {
+    animation-delay: -1s; 
+  }
+  
+  .fourth-animation-news {
+    animation-delay: -0.5s; 
+  }
+  
+  .fifth-animation-news {
+    animation-delay: 0s; 
+  }
+  
+  .sixth-animation-news {
+    animation-delay: 0.5s; 
+  }
+    
+  .seventh-animation-news {
+    animation-delay: 1s;
+  }
+  
+  .img {
+    object-fit: cover;
+    width: 170px;
+    height: 100vh;
+    margin-top: -60px;
+  }
+  
+  .nba {
+    margin-top: -20px;
+  }
+  
+  @keyframes flow {
+    0% {height: 20%; border-radius: 0px 0px 30px 30px;}
+    50% {height: 90%; border-radius: 0px 0px 100px 100px;}
+    100% {height: 20%; border-radius: 0px 0px 30px 30px;}
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    #img-7 {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 1028px) {
+    #img-1 {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 860px) {
+    #img-6 {
+      display: none;
+    }
+  }
+
+
+/* projects headers */
+
+.masthead {
+    padding: 3rem 0 7rem;
+    position: relative;
+    background-color: #046d0c;
+    background-image: url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, #062001 0%, #068517 100%);
+    background-size: cover;
+    z-index: 0
+}
+
+.masthead svg.wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0
+}
+
+.masthead h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.1;
+    z-index: 1
+}
+
+.masthead h2 {
+    color: rgba(255, 255, 255, .6);
+    font-weight: 600;
+    z-index: 1;
+    font-size: 1.2rem
+}
+
+.masthead a {
+    color: rgba(255, 255, 255, .8);
+    text-decoration: underline;
+    z-index: 1
+}
+
+.masthead a:hover {
+    color: #fff
+}
+
+.masthead a:active {
+    text-decoration: none
+}
+
+@media(min-width:992px) {
+    .masthead h1 {
+        font-size: 3rem
+    }
+
+    .masthead h2 {
+        font-size: 1.5rem
+    }
+}
+
+.masthead .masthead-cards {
+    position: relative;
+    z-index: 1
+}
+
+.masthead .masthead-cards .shape {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .3);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%
+}
+
+.masthead .masthead-cards .card {
+    opacity: 1;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .05rem;
+    color: #212529;
+    transition: .15s all
+}
+
+.masthead .masthead-cards .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem
+}
+
+.masthead .masthead-cards .card:active {
+    margin-top: inherit;
+    margin-bottom: inherit
+}
+
+.masthead .masthead-cards .card.border-bottom-blue:hover {
+    color: #2092ed
+}
+
+.masthead .masthead-cards .card.border-bottom-green:hover {
+    color: #28a745
+}
+
+.masthead .masthead-cards .card.border-bottom-red:hover {
+    color: #dd3d31
+}
+
+.masthead .masthead-cards .card.border-bottom-yellow:hover {
+    color: #ffc107
+}
+
+.masthead-page {
+    padding: 1rem 0 4rem
+}
+
+@media(min-width:992px) {
+    .masthead-page h1 {
+        font-size: 2.5rem
+    }
+}
+
+.border-bottom-yellow {
+    border-color: #ffc107 !important;
+}
+
+.border-bottom-red {
+    border-color: #dd3d31 !important;
+}
+
+.border-bottom-blue {
+    border-color: #2092ed !important;
+}
+
+.border-bottom-green {
+    border-color: #28a745 !important;
+}
+
+.border-bottom-blue,
+.border-bottom-green,
+.border-bottom-red,
+.border-bottom-yellow {
+    border-bottom: .4rem solid !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 2rem 1.5rem -1.5rem rgba(33, 37, 41, .15), 0 0 1.5rem .5rem rgba(33, 37, 41, .05) !important;
+}
+
+.border-0 {
+    border: 0 !important;
+}
+
+
+/* hero elements */
+

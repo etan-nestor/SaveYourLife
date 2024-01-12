@@ -35,6 +35,24 @@ def Events(request):
     return render (request, 'Events/events.html')
 
 
+# Services view
+
+def Services(request):
+    return render (request, 'Services/services.html')
+
+
+# Services view
+
+def Projects(request):
+    return render (request, 'Projects/projects.html')
+
+
+# Services view
+
+def News(request):
+    return render (request, 'News/news.html')
+
+
 
 # Blog view
 

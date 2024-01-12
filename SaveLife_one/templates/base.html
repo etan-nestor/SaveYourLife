@@ -316,11 +316,11 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#section_3">Projects</a>
+                        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#section_4">Services</a>
+                        <a class="nav-link" href="{% url 'services' %}">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'blog' %}">Blog</a>
@@ -331,8 +331,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link click-scroll dropdown-toggle" href="#section_5"
-                            id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link" href="{% url 'news' %}"
+                            id="navbarLightDropdownMenuLink" role="button"
                             aria-expanded="false">News</a>
 
                         <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
@@ -417,7 +417,28 @@
     {% comment %} Les composants de mon events page {% endcomment %}
 
     {% block header_events %} {% endblock %}
-    {% block hero_contact %} {% endblock %}
+    {% block hero_events %} {% endblock %}
+
+
+
+    {% comment %} Les composants de mon services page {% endcomment %}
+
+    {% block header_services %} {% endblock %}
+    {% block hero_services %} {% endblock %}
+    {% block laws_services %} {% endblock %}
+
+
+
+    {% comment %} Les composants de mon Projects page {% endcomment %}
+
+    {% block header_projects %} {% endblock %}
+    {% block hero_projects %} {% endblock %}
+
+
+    {% comment %} Les composants de mon news page {% endcomment %}
+
+    {% block header_news %} {% endblock %}
+    {% block hero_news %} {% endblock %}
 
 
 
@@ -523,6 +544,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
