@@ -1,12 +1,3 @@
-/*
-
-TemplateMo 581 Kind Heart Charity
-
-https://templatemo.com/tm-581-kind-heart-charity
-
-*/
-
-
 
 @font-face {
     font-family: 'Metropolis';
@@ -47,6 +38,7 @@ https://templatemo.com/tm-581-kind-heart-charity
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
+
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #5bc1ac;
@@ -174,6 +166,7 @@ strong {
 /*---------------------------------------
   SECTION               
 -----------------------------------------*/
+
 .section-padding {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -201,6 +194,7 @@ strong {
 /*---------------------------------------
   CUSTOM BLOCK               
 -----------------------------------------*/
+
 .custom-block-wrap {
   background: var(--white-color);
   border-radius: var(--border-radius-medium);
@@ -233,6 +227,7 @@ strong {
 /*---------------------------------------
   PROGRESS BAR               
 -----------------------------------------*/
+
 .progress {
   background: var(--border-color);
   height: 5px;
@@ -246,6 +241,7 @@ strong {
 /*---------------------------------------
   CUSTOM ICON COLOR               
 -----------------------------------------*/
+
 .custom-icon {
   color: var(--secondary-color);
 }
@@ -254,6 +250,7 @@ strong {
 /*---------------------------------------
   CUSTOM LIST               
 -----------------------------------------*/
+
 .custom-list {
   margin-bottom: 0;
   padding-left: 0;
@@ -300,6 +297,7 @@ strong {
 /*---------------------------------------
   AVATAR IMAGE - TESTIMONIAL, AUTHOR               
 -----------------------------------------*/
+
 .avatar-image {
   border-radius: var(--border-radius-large);
   width: 65px;
@@ -311,6 +309,7 @@ strong {
 /*---------------------------------------
   CUSTOM BUTTON               
 -----------------------------------------*/
+
 .custom-btn {
   background: var(--secondary-color);
   border: 2px solid transparent;
@@ -350,6 +349,7 @@ strong {
 /*---------------------------------------
   NAVIGATION              
 -----------------------------------------*/
+
 .navbar {
   background: var(--white-color);
   z-index: 9;
@@ -529,6 +529,7 @@ strong {
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
+
 .site-header {
   background: var(--primary-color);
   padding-top: 15px;
@@ -558,6 +559,7 @@ strong {
 /*---------------------------------------
   HERO & HERO SLIDE         
 -----------------------------------------*/
+
 .hero-section-full-height {
   height: 680px;
   min-height: 680px;
@@ -632,6 +634,7 @@ strong {
 /*---------------------------------------
   FEATURE BLOCK              
 -----------------------------------------*/
+
 .featured-block {
   text-align: center;
   transition: all 0.5s ease;
@@ -670,6 +673,7 @@ strong {
 /*---------------------------------------
   ABOUT              
 -----------------------------------------*/
+
 .about-section {
   background-repeat: no-repeat;
   background-position: center;
@@ -692,6 +696,7 @@ strong {
 /*---------------------------------------
   COUNTER NUMBERS              
 -----------------------------------------*/
+
 .counter-thumb {
   margin: 20px;
   margin-bottom: 0;
@@ -715,6 +720,7 @@ strong {
 /*---------------------------------------
   VOLUNTEER              
 -----------------------------------------*/
+
 .volunteer-section {
   background: #fff;
   position: relative;
@@ -761,6 +767,7 @@ strong {
 /*---------------------------------------
   DONATE              
 -----------------------------------------*/
+
 .donate-section {
   background-image: url('../images/different-people-doing-volunteer-work.jpg');
   background-repeat: no-repeat;
@@ -783,6 +790,7 @@ strong {
 /*---------------------------------------
   NEWS         
 -----------------------------------------*/
+
 .news-detail-header-section {
   background-image: url('../images/news/close-up-volunteer-oganizing-stuff-donation.jpg');
   background-repeat: no-repeat;
@@ -939,6 +947,7 @@ blockquote::before {
 /*---------------------------------------
   TESTIMONIAL CAROUSEL              
 -----------------------------------------*/
+
 .testimonial-section {
   position: relative;
   overflow: hidden;
@@ -1065,6 +1074,7 @@ blockquote::before {
 /*---------------------------------------
   CONTACT               
 -----------------------------------------*/
+
 .contact-section {
   background: var(--white-color);
 }
@@ -1091,6 +1101,7 @@ blockquote::before {
 /*---------------------------------------
   CUSTOM FORM               
 -----------------------------------------*/
+
 .custom-form .form-control,
 .input-group-file {
   background-color: var(--section-bg-color);
@@ -1231,6 +1242,7 @@ blockquote::before {
 /*---------------------------------------
   CONTACT SEARCH & DONATE & SUBCRIBE FORM              
 -----------------------------------------*/
+
 .contact-form .form-control {
   background: var(--white-color);
 }
@@ -1276,6 +1288,7 @@ blockquote::before {
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
+
 .site-footer {
   background-color: var(--site-footer-bg-color);
   padding-top: 60px;
@@ -1320,6 +1333,7 @@ blockquote::before {
 /*---------------------------------------
   FOOTER MENU               
 -----------------------------------------*/
+
 .footer-menu {
   column-count: 2;
   margin: 0;
@@ -1344,6 +1358,7 @@ blockquote::before {
 /*---------------------------------------
   SOCIAL ICON               
 -----------------------------------------*/
+
 .social-icon {
   margin: 0;
   padding: 0;
@@ -1377,6 +1392,7 @@ blockquote::before {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
+
 @media screen and (min-width: 1600px) {
   .featured-block {
     min-height: inherit;

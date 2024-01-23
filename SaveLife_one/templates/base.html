@@ -6,28 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="Nestor COMPAORE" content="SaveYourLife">
 
     <title>SaveYourLife</title>
 
-    <!-- CSS FILES -->
-    <link href="{% static 'css/base.css' %}" rel="stylesheet">
-    <link href="{% static 'css/mediaquery.css' %}" rel="stylesheet">
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Others Files -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-...">
+
+    <!-- CSS FILES -->
+
     <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
     <link href="{% static 'css/lifeSave.css' %}" rel="stylesheet">
+    <link href="{% static 'css/mediaquery.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
     <!-- Vendor CSS Files -->
-  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
-  <link href="{% static 'js/Share.js' %}" rel="stylesheet">
+
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
   <style>
+
     .author-name {
         color: #3498db;
     }
@@ -178,7 +184,7 @@
     
     
     .header-section {
-        background-image: url('https://img.freepik.com/photos-gratuite/collegues-regardant-moniteur_23-2149370568.jpg?w=996&t=st=1701997739~exp=1701998339~hmac=218c0e7ac1919f674304c96e49a7e00dcdba11f6d5e3208827989ba957c538c9');
+        background-image: url('/static/images/phone.jpg');
         background-size: cover;
         background-position: center;
         height: 500px;
@@ -346,7 +352,7 @@
                         <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_6">
+                        <span class="nav-link click-scroll" href="#section_6">
                             <div class="language-select">
                                 <select class="selectpicker">
                                  <option>En</option>
@@ -355,7 +361,7 @@
                                  <option>Ar</option>
                              </select>
                             </div>
-                        </a>
+                        </span>
                     </li>
 
                     <li class="nav-item ms-3">
@@ -363,6 +369,7 @@
                     </li>
                 </ul>
             </div>
+
         </div>
     </nav>
 
@@ -409,36 +416,36 @@
 
     {% comment %} Les composants de mon acontact page {% endcomment %}
 
-    {% block header_contact %} {% endblock %}
-    {% block team_contact %} {% endblock %}
-    {% block contact_form %} {% endblock %}
+        {% block header_contact %} {% endblock %}
+        {% block team_contact %} {% endblock %}
+        {% block contact_form %} {% endblock %}
 
 
     {% comment %} Les composants de mon events page {% endcomment %}
 
-    {% block header_events %} {% endblock %}
-    {% block hero_events %} {% endblock %}
+        {% block header_events %} {% endblock %}
+        {% block hero_events %} {% endblock %}
 
 
 
     {% comment %} Les composants de mon services page {% endcomment %}
 
-    {% block header_services %} {% endblock %}
-    {% block hero_services %} {% endblock %}
-    {% block laws_services %} {% endblock %}
+        {% block header_services %} {% endblock %}
+        {% block hero_services %} {% endblock %}
+        {% block laws_services %} {% endblock %}
 
 
 
     {% comment %} Les composants de mon Projects page {% endcomment %}
 
-    {% block header_projects %} {% endblock %}
-    {% block hero_projects %} {% endblock %}
+        {% block header_projects %} {% endblock %}
+        {% block hero_projects %} {% endblock %}
 
 
     {% comment %} Les composants de mon news page {% endcomment %}
 
-    {% block header_news %} {% endblock %}
-    {% block hero_news %} {% endblock %}
+        {% block header_news %} {% endblock %}
+        {% block hero_news %} {% endblock %}
 
 
 
@@ -534,18 +541,20 @@
     </footer>
 
     <!-- JAVASCRIPT FILES -->
-    <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/jquery.sticky.js' %}"></script>
     <script src="{% static 'js/click-scroll.js' %}"></script>
     <script src="{% static 'js/counter.js' %}"></script>
     <script src="{% static 'js/custom.js' %}"></script>
+    <script href="{% static 'js/Share.js' %}"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -559,9 +568,13 @@
         })();
     </script>
     <!--End of Tawk.to Script-->
+
+    <!--Start of aos-->
     <script>
       AOS.init();
     </script>
+    <!--End of aos-->
+    
 </body>
 
 </html>
