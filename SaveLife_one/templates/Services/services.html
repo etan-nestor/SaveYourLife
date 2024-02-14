@@ -4,7 +4,7 @@
 
 {% block header_services %}
 
-<div style="background: url('images/services/')"          class="jumbotron bg-cover text-white">
+<div style="background: url('/static/images/sv-header.jpg');" class="jumbotron text-white">
     <div class="container py-5 text-center">
         <h1 class="display-4 font-weight-bold">Bootstrap static header</h1>
         <p class="font-italic mb-0">Using simple jumbotron-style component, create a nice Bootstrap 4 header with a background image.</p>
@@ -27,27 +27,27 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <div class="box">
+            <div class="services-box">
                 <div class="our-services settings">
-                    <div class="icon"> <img src="https://i.imgur.com/6NKPrhO.png"> </div>
+                    <div class="sv-icon"> <img src="https://i.imgur.com/6NKPrhO.png"> </div>
                     <h4>Settings</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="box">
+            <div class="services-box">
                 <div class="our-services speedup">
-                    <div class="icon"> <img src="https://i.imgur.com/KMbnpFF.png"> </div>
+                    <div class="sv-icon"> <img src="https://i.imgur.com/KMbnpFF.png"> </div>
                     <h4>Speedup</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="box">
+            <div class="services-box">
                 <div class="our-services privacy">
-                    <div class="icon"> <img src="https://i.imgur.com/AgyneKA.png"> </div>
+                    <div class="sv-icon"> <img src="https://i.imgur.com/AgyneKA.png"> </div>
                     <h4>Privacy</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
                 </div>
@@ -56,27 +56,27 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <div class="box">
+            <div class="services-box">
                 <div class="our-services backups">
-                    <div class="icon"> <img src="https://i.imgur.com/vdH9LKi.png"> </div>
+                    <div class="sv-icon"> <img src="https://i.imgur.com/vdH9LKi.png"> </div>
                     <h4>Backups</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="box">
+            <div class="services-box">
                 <div class="our-services ssl">
-                    <div class="icon"> <img src="https://i.imgur.com/v6OnUqu.png"> </div>
+                    <div class="sv-icon"> <img src="https://i.imgur.com/v6OnUqu.png"> </div>
                     <h4>SSL secured</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="box">
+            <div class="services-box">
                 <div class="our-services database">
-                    <div class="icon"> <img src="https://i.imgur.com/VzjZw9M.png"> </div>
+                    <div class="sv-icon"> <img src="https://i.imgur.com/VzjZw9M.png"> </div>
                     <h4>Database</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
@@ -89,7 +89,35 @@
 
 {% block laws_services%}
 
-
+<section>
+    <h2 class="section-heading">Our Team</h2>
+    <div class="custom-section team">
+        <div class="container">
+          <div class="profile">
+            <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt=""/><span class="name">Kalyan</span>
+          </div>
+          <div class="profile">
+            <img src="https://images.unsplash.com/photo-1530577197743-7adf14294584?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80" alt=""/><span class="name">Suchitra Tiwari</span>
+          </div>
+      
+          <div class="profile">
+            <img src="https://images.unsplash.com/photo-1598641795816-a84ac9eac40c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80" alt=""/><span class="name">Sajid Ghani</span>
+          </div>
+          <div class="profile">
+            <img src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt=""/><span class="name">Dhriti</span>
+          </div>
+          <div class="profile">
+            <img src="https://images.unsplash.com/photo-1618018352910-72bdafdc82a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt=""/><span class="name">Milind</span>
+          </div>
+          <div class="profile">
+            <img src="https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=801&q=80" alt=""/><span class="name">Srikant Tiwari</span>
+          </div>
+          <div class="profile">
+            <img src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80" alt=""/><span class="name">Major Sameer</span>
+          </div>
+        </div>
+    </div>
+</section>
 
 
  {% endblock %}

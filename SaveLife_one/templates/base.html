@@ -22,6 +22,7 @@
     <link href="{% static 'css/lifeSave.css' %}" rel="stylesheet">
     <link href="{% static 'css/mediaquery.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
 
     <!-- Vendor CSS Files -->
@@ -32,7 +33,9 @@
     <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
     <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
-  <style>
+<style>
+
+   /* blog css details */
 
     .author-name {
         color: #3498db;
@@ -107,6 +110,8 @@
         text-align: center;
         margin-top: 20px;
     }
+
+    /* fin blog css details */
     
     .banner-section {
         height: 400px;
@@ -181,10 +186,262 @@
     .circle-container h5 {
         padding-top: 15px;
     }
+
+
+
+
+    /* project section 3 */
+
+
+.text-center {
+    text-align: center;
+}
+  
+.color-white {
+    color: #fff;
+  }
+  
+  .box-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 35px 15px;
+    width: 100%;
+  }
+  
+  @media screen and (min-width:1380px) {
+    .box-container {
+      flex-direction: row
+    }
+  }
+  
+  .box-item {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    width: 415px;
+    margin-bottom: 35px;
+    max-width: 100%;
+  }
+  
+  .flip-box {
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+  }
+  
+  .flip-box-front,
+  .flip-box-back {
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    min-height: 475px;
+    -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-front {
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-back {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box .inner {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 60px;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
     
+    transform: translateY(-50%) translateZ(60px) scale(.94);
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+    -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+    top: 50%;
+  }
+  
+  .flip-box-header {
+    font-size: 34px;
+    color:#fff;
+  }
+  
+  .flip-box p {
+    font-size: 20px;
+    line-height: 1.5em;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .flip-box-img {
+    margin-top: 25px;
+  }
+  
+  .flip-box-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+  }
+
+    /* fin project section 3 */
+
+
+    /* project last section  */
+
+    .section-last-project{
+        margin: 0;
+        padding: 0;
+        min-height: 76vh;
+        background: #588958;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-lastp{
+        width: 1400px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .container-lastp .card{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .container-lastp .card .face{
+        width: 430px;
+        height: 200px;
+        transition: 0.5s;
+    }
+    
+    .container-lastp .card .face.face1{
+        position: relative;
+        background: #108950;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(100px);
+    }
+    
+    .container-lastp .card:hover .face.face1{
+        background: green;
+        transform: translateY(0);
+    }
+    
+    .container-lastp .card .face.face1 .content{
+        opacity: 0.2;
+        transition: 0.5s;
+    }
+    
+    .container-lastp .card:hover .face.face1 .content{
+        opacity: 1;
+    }
+    
+    .container-lastp .card .face.face1 .content img{
+        max-width: 100px;
+    }
+    
+    .container-lastp .card .face.face1 .content h3{
+        margin: 10px 0 0;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    .container-lastp .card .face.face2{
+        position: relative;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+        transform: translateY(-100px);
+    }
+    
+    .container-lastp .card:hover .face.face2{
+        transform: translateY(0);
+    }
+    
+    .container-lastp .card .face.face2 .content p{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container-lastp .card .face.face2 .content a{
+        margin: 15px 0 0;
+        display:  inline-block;
+        text-decoration: none;
+        font-weight: 900;
+        color: #333;
+        padding: 5px;
+        border: 1px solid #333;
+    }
+    
+    .container-lastp .card .face.face2 .content a:hover{
+        background: #333;
+        color: #fff;
+    }
+
+    /* fin project last section */
+    
+    /* about css details */
+
     .header-section {
-        background-image: url('/static/images/phone.jpg');
+        background-image: url('/static/images/about-header.jpg');
         background-size: cover;
         background-position: center;
         height: 500px;
@@ -244,7 +501,93 @@
         }
     }
     
-  </style>
+    /* fin about css details */
+
+
+    /*  services-teams css details */
+
+    .custom-section {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+    }
+    
+    .custom-section .section-heading {
+        text-align: center;
+        font-size: 64px;
+        color: #10996d;
+        margin: 0 0 70px;
+    }
+    
+    .custom-section .container {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    .custom-section .profile {
+        position: relative;
+        transition: all 0.3s;
+    }
+    
+    .custom-section .profile:hover {
+        transform: translateY(25px);
+    }
+    
+    .custom-section .profile img {
+        max-width: 100%;
+        border-radius: 50%;
+        border: 5px solid #f7f7f7;
+        filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+        cursor: pointer;
+    }
+    
+    .custom-section .profile:not(:first-child) img {
+        margin-left: -20px;
+    }
+    
+    .custom-section .profile .name {
+        position: absolute;
+        background-color: #10996d;
+        color: #fff;
+        font-family: "Bebas Neue", cursive;
+        padding: 15px 30px;
+        border-radius: 100px;
+        bottom: -80px; left: 50%;
+        white-space: nowrap;
+        transform: translate(-50%, -50px);
+        letter-spacing: 1px;
+        font-size: 20px;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    
+    .custom-section .profile .name::before {
+        content: "";
+        position: absolute;
+        width: 15px; height: 15px;
+        background-color: #10996d;
+        top: 0; left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    
+    .custom-section .profile img:hover + .name {
+        opacity: 1;
+        transform: translateX(-50%);
+        box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+    }
+    
+
+    /* fin services-teams css details */
+
+
+
+</style>
 </head>
 
 <body id="section_1">
@@ -439,7 +782,12 @@
     {% comment %} Les composants de mon Projects page {% endcomment %}
 
         {% block header_projects %} {% endblock %}
-        {% block hero_projects %} {% endblock %}
+        {% block hero_project1 %} {% endblock %}
+        {% block hero_project2 %} {% endblock %}
+        {% block barner_project %} {% endblock %}
+        {% block hero_project3 %} {% endblock %}
+        {% block hero_project4 %} {% endblock %}
+        {% block hero_project5 %} {% endblock %}
 
 
     {% comment %} Les composants de mon news page {% endcomment %}

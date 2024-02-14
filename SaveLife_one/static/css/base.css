@@ -11,40 +11,42 @@
 /* contact elements */
 
 
-.heading{
-    font-size:20px;
-    font-weight:600;
-    color:#3D5AFE;
+.heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3D5AFE;
 
 }
 
-  .line1{
-    color:#000;
-    font-size:12px;
+.line1 {
+    color: #000;
+    font-size: 12px;
 
-  }
-   .line2{
-    color:#000;
-    font-size:12px;
-    
-  }
-   .line3{
-    color:#000;
-    font-size:12px;
-    
-  }
+}
 
-  .cards{
+.line2 {
+    color: #000;
+    font-size: 12px;
+
+}
+
+.line3 {
+    color: #000;
+    font-size: 12px;
+
+}
+
+.cards {
 
     transition: all 0.2s ease;
     cursor: pointer;
-    
-
-  }
-    
 
 
-.cards:hover{
+}
+
+
+
+.cards:hover {
 
     box-shadow: 5px 6px 6px 2px #e9ecef;
     transform: scale(1.1);
@@ -164,15 +166,10 @@
     margin-bottom: 60px;
 }
 
-/* services header */
-
-.bg-cover {
-    background-size: cover !important;
-}
 
 /* services heroes */
 
-.box {
+.services-box {
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -191,15 +188,15 @@
     box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
 }
 
-.our-services .icon {
+.our-services .sv-icon {
     margin-bottom: -21px;
     transform: translateY(-50%);
-    text-align: center
+    text-align: center;
 }
 
 .our-services:hover h4,
 .our-services:hover p {
-    color: #fff
+    color: #fff;
 }
 
 .speedup:hover {
@@ -237,6 +234,7 @@
     cursor: pointer;
     background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
 }
+
 /* services laws */
 
 
@@ -248,26 +246,26 @@
     position: relative;
     text-align: center;
     overflow: hidden;
-  }
-  
-  .title-news {
+}
+
+.title-news {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: -1;
     color: #51ec2a;
     font-size: 120px;
     font-weight: 600;
-  }
-  
-  .title-large-news {
+}
+
+.title-large-news {
     height: 130px;
     margin-left: -5px;
     opacity: 0.2;
-  }
-  
-  .img-container-news {
+}
+
+.img-container-news {
     display: inline-block;
     overflow: hidden;
     margin-left: -2.8px;
@@ -279,68 +277,79 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: -2s;
-    transition-timing-function: cubic-bezier(0,.57,1,.46);
-    box-shadow: 2px 2px 16px 2px rgba(0,0,0,0.5);
-  }
-  
-  .second-animation-news {
+    transition-timing-function: cubic-bezier(0, .57, 1, .46);
+    box-shadow: 2px 2px 16px 2px rgba(0, 0, 0, 0.5);
+}
+
+.second-animation-news {
     animation-delay: -1.5s;
-  }
-  
-  .third-animation-news {
-    animation-delay: -1s; 
-  }
-  
-  .fourth-animation-news {
-    animation-delay: -0.5s; 
-  }
-  
-  .fifth-animation-news {
-    animation-delay: 0s; 
-  }
-  
-  .sixth-animation-news {
-    animation-delay: 0.5s; 
-  }
-    
-  .seventh-animation-news {
+}
+
+.third-animation-news {
+    animation-delay: -1s;
+}
+
+.fourth-animation-news {
+    animation-delay: -0.5s;
+}
+
+.fifth-animation-news {
+    animation-delay: 0s;
+}
+
+.sixth-animation-news {
+    animation-delay: 0.5s;
+}
+
+.seventh-animation-news {
     animation-delay: 1s;
-  }
-  
-  .img {
+}
+
+.img {
     object-fit: cover;
     width: 170px;
     height: 100vh;
     margin-top: -60px;
-  }
-  
-  .nba {
+}
+
+.nba {
     margin-top: -20px;
-  }
-  
-  @keyframes flow {
-    0% {height: 20%; border-radius: 0px 0px 30px 30px;}
-    50% {height: 90%; border-radius: 0px 0px 100px 100px;}
-    100% {height: 20%; border-radius: 0px 0px 30px 30px;}
-  }
-  
-  @media only screen and (max-width: 1200px) {
+}
+
+@keyframes flow {
+    0% {
+        height: 20%;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    50% {
+        height: 90%;
+        border-radius: 0px 0px 100px 100px;
+    }
+
+    100% {
+        height: 20%;
+        border-radius: 0px 0px 30px 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
     #img-7 {
-      display: none;
+        display: none;
     }
-  }
-  
-  @media only screen and (max-width: 1028px) {
+}
+
+@media only screen and (max-width: 1028px) {
     #img-1 {
-      display: none;
+        display: none;
     }
-  }
-  
-  @media only screen and (max-width: 860px) {
+}
+
+@media only screen and (max-width: 860px) {
     #img-6 {
-      display: none;
+        display: none;
     }
-  }
+}
 
 
 /* projects headers */
@@ -493,5 +502,321 @@
 }
 
 
-/* hero elements */
+/* hero elements project1 */
+
+.card-pr1 {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+}
+
+.card-pr1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.card-pr1 h3 {
+    font-weight: 600;
+}
+
+.card-pr1 img {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    max-height: 120px;
+}
+
+.card-1 {
+    background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+}
+
+.card-2 {
+    background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+}
+
+.card-3 {
+    background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+}
+
+@media(max-width: 990px) {
+    .card-pr1 {
+        margin: 20px;
+    }
+}
+
+/* end hero elements project1 */
+
+/*hero elements project2 */
+
+.attribution-pr2 {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution-pr2 a {
+    color: hsl(228, 45%, 44%);
+}
+
+h1:first-of-type {
+    font-weight: var(--weight1);
+    color: blue;
+
+}
+
+h1:last-of-type {
+    color: blue;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.header-pr2 {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.header-pr2 p {
+    margin: 0 auto;
+    line-height: 2;
+    color: grey;
+}
+
+
+.box-pr2 p {
+    color: grey;
+}
+
+.box-pr2 {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px grey;
+    padding: 30px;
+    margin: 20px;
+}
+
+img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .box-pr2 {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box-pr2 {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 3px solid cyan;
+}
+
+.red {
+    border-top: 3px solid red;
+}
+
+.blue {
+    border-top: 3px solid blue;
+}
+
+.orange {
+    border-top: 3px solid orange;
+}
+
+h2 {
+    color: blue;
+    font-weight: 700;
+}
+
+
+@media (min-width: 950px) {
+    .row1-container-pr2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row2-container-pr2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+
+    .box-pr2 {
+        width: 20%;
+
+    }
+
+    .header-pr2 p {
+        width: 30%;
+    }
+
+}
+
+/* end hero elements project2 */
+
+
+/* hero elements project3 */
+
+
+.scenes-pr3 {
+    position: relative;
+    aspect-ratio: 2.4 / 1;
+    outline: 2px solid #ccc;
+}
+
+.scene-1-pr3,
+.scene-2-pr3 {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+}
+
+.scene-1-pr3 {
+    background-image: url('/static/images/slide-barner1.jpg');
+}
+
+.scene-2-pr3 {
+    background-image: url('/static/images/barner-slide1.jpg');
+    -webkit-mask-image: linear-gradient(to right,
+            transparent 47.5%,
+            #fff 52.5%);
+    -webkit-mask-size: 210%;
+    -webkit-mask-position: left;
+}
+
+.scenes-pr3:is(:hover, :focus) .scene-2-pr3 {
+    -webkit-mask-position: right;
+    transition: -webkit-mask-position 2s linear;
+}
+
+.scene-title-pr3 {
+    position: absolute;
+    font-weight: bolder;
+    max-width: 45%;
+    margin: min(40px, 4vw);
+    font-size: 2.5em;
+}
+
+.scene-1-pr3 .scene-title-pr3 {
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: left;
+}
+
+.scene-2-pr3 .scene-title-pr3 {
+    top: 0;
+    right: 0;
+    color: #4eee04;
+    text-align: right;
+}
+
+/* everything else */
+
+
+.project3-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    margin: 0;
+    padding: 20px;
+    background-color: #1c4727;
+    letter-spacing: 0.1em;
+}
+
+.wrapper-pr3 {
+    display: grid;
+    gap: 30px;
+    width: min(1000px, 100%);
+}
+
+.intro-pr3 {
+    text-align: center;
+}
+
+.heading-pr3 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.heading-pr3::before,
+.heading-pr3::after {
+    content: ' — ';
+}
+
+.nudge-pr3 {
+    margin: 0;
+    color: #888;
+    font-size: 1.25em;
+}
+
+.visualizer-pr3 {
+    display: flex;
+    justify-content: center;
+}
+
+.visualizer-frame-pr3 {
+    position: relative;
+    width: min(150px, 25vw);
+    aspect-ratio: 2.4 / 1;
+    outline: 2px solid #ccc;
+}
+
+.visualizer-mask-pr3 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 210%;
+    background-color: #333;
+    background-image:
+        linear-gradient(to right, transparent 47.5%, #fff 52.5%),
+        linear-gradient(45deg, #444 25%, transparent 25%, transparent 75%, #444 75%),
+        linear-gradient(45deg, #444 25%, transparent 25%, transparent 75%, #444 75%);
+    background-size:
+        auto auto,
+        16px 16px,
+        16px 16px;
+    background-position:
+        0 0,
+        0 0,
+        8px 8px;
+    box-shadow: inset 0 0 0 2px #111;
+}
+
+.scenes-pr3:is(:hover, :focus)+.visualizer-pr3 .visualizer-mask-pr3 {
+    transform: translateX(calc((100% - 210%) / 2.1));
+    transition: transform 2s linear;
+}
+
+
+/* end hero elements project3 */
 

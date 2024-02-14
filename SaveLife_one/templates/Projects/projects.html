@@ -15,12 +15,12 @@
 
             <div class="col-lg-5">
                 <div class="py-5 px-4 masthead-cards">
-                    <div class="d-flex">
+                    <div class="d-flex gap-3">
                         <a href="#" class="w-50 pr-3 pb-4">
                             <div class="card border-0 border-bottom-red shadow-lg shadow-hover">
                                 <div class="card-body text-center">
                                     <div class="text-center">
-                                        <i class="bi-pencil my-2"></i>
+                                        <img style="width: 50px;" src="{% static 'icons/projection.png' %}" alt="current">
                                     </div>
                                     Current Projects
                                 </div>
@@ -30,19 +30,19 @@
                             <div class="card border-0 border-bottom-blue shadow-lg shadow-hover">
                                 <div class="card-body text-center">
                                     <div class="text-center">
-                                        <i class="bi-code my-2"></i>
+                                        <img style="width: 50px;" src="{% static 'icons/project-management.png' %}" alt='success' />
                                     </div>
-                                    Past Success Stories
+                                  Success Stories
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex gap-3">
                         <a href="#" class="w-50 pr-3">
                             <div class="card border-0 border-bottom-yellow shadow-lg shadow-hover">
                                 <div class="card-body text-center">
                                     <div class="text-center">
-                                        <i class="bi-code my-2"></i>
+                                        <img style="width: 50px;" src="{% static 'icons/scie-sauteuse.png' %}" alt='success' />
                                     </div>
                                     Contribute
                                 </div>
@@ -52,7 +52,7 @@
                             <div class="card border-0 border-bottom-green shadow-lg shadow-hover">
                                 <div class="card-body text-center">
                                     <div class="text-center">
-                                        <i class="bi-list my-2"></i>
+                                        <img style="width: 50px;" src="{% static 'icons/navette.png' %}" alt='success' />
                                     </div>
                                     Future Initiatives
                                 </div>
@@ -108,7 +108,249 @@
 
 {% endblock %}
 
-{% block hero_projects %}
+{% block hero_project1 %}
 
+
+<div class="container">
+    <div>
+        <h3 style="text-align: center;margin: 50px 0px;">Health and Wellness Initiatives</h3>
+        <p style="text-align: center;">?</p>
+        <hr>
+    </div>
+    <div class="row" style="margin-bottom: 75px;">
+      <div class="col-md-4">
+        <div class="card card-pr1 card-1">
+          <h5>Community Health Clinics</h5>
+          <p>Establish and operate health clinics in underserved communities, providing basic medical services, health education, and preventive care.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-pr1 card-2">
+          <h5>Mental Health Awareness Campaigns</h5>
+          <p>Conduct awareness programs to reduce the stigma surrounding mental health, offering counseling services and promoting overall emotional well-being.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-pr1 card-3">
+          <h5>Nutrition Support Programs</h5>
+          <p>Implement initiatives that address malnutrition, offering nutritional education, distributing supplements, and supporting sustainable agriculture projects.</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block hero_project2 %}
+
+<div class="hero_project2" style="margin-bottom: 200px;">
+
+    <div class="header-pr2">
+        <h3>Child Protection and Empowerment</h3>
+        <p>?</p>
+    </div>
+    
+    <div class="row1-container-pr2">
+    
+        <div class="box-pr2 box-down cyan">
+          <h5>Foster Care Expansion</h5>
+          <p>Expand and enhance foster care programs to provide a loving and stable environment for abandoned children, ensuring their physical and emotional needs are met.</p>
+          <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="">
+        </div>
+    
+        <div class="box-pr2 red">
+          <h5>Education Scholarships</h5>
+          <p>Launch scholarship programs to support the education of underprivileged children, covering school fees, supplies, and other related expenses.</p>
+          <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="">
+        </div>
+    
+        <div class="box-pr2 box-down blue">
+          <h5>Recreation & Skill-Building Workshops</h5>
+          <p>Organize recreational activities and skill-building workshops for children, promoting their holistic development and building confidence.</p>
+          <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
+        </div>
+    
+    </div>
+    
+</div>
+
+{% endblock %}
+
+{% block barner_project %}
+
+<section class="project3-section">
+  
+    <div class="wrapper-pr3">
+    <div class="scenes-pr3" tabindex="0">
+      <div class="scene-1-pr3">
+        <h1 class="scene-title-pr3">You can continue tu visit our differents projects</h1>
+      </div>
+      <div class="scene-2-pr3">
+        <h2 class="scene-title-pr3">~Save Your Life~</h2>
+      </div>
+    </div>  
+  </div>
+    
+</section>
+  
+{% endblock %}
+
+{% block hero_project3 %}
+
+    <section style="height: 100vh;">
+        <div style="text-align: center;margin-top: 4rem;">
+            <h3>Community Building and Awareness Events</h3>
+            <p>?</p>
+        </div>
+        <div class="box-container">
+            <div class="box-item">
+            <div class="flip-box">
+              <div class="flip-box-front text-center" style="background-image: url('/static/images/p3.jpg'); text-align: center;">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Cultural Festivals</h3>
+                  <p>Celebrate diversity by organizing cultural festivals that showcase the traditions, music, and cuisine of different communities within your service areas.</p>
+                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                </div>
+              </div>
+              <div class="flip-box-back text-center" style="background-image: url('/static/images/p3.jpg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Cultural Festivals</h3>
+                  <p>Celebrate diversity by organizing cultural festivals that showcase the traditions, music, and cuisine of different communities within your service areas.</p>
+                  <button class="flip-box-button">Learn More</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="box-item">
+            <div class="flip-box">
+              <div class="flip-box-front text-center" style="background-image: url('/static/images/p34.jpg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Community Clean-Up Days</h3>
+                  <p>Mobilize volunteers for a day of community clean-up, enhancing the neighborhood environment and fostering a sense of pride and unity.</p>
+                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                </div>
+              </div>
+              <div class="flip-box-back text-center" style="background-image: url('/static/images/p34.jpg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Community Clean-Up Days</h3>
+                  <p>Mobilize volunteers for a day of community clean-up, enhancing the neighborhood environment and fostering a sense of pride and unity.</p>
+                  <button class="flip-box-button">Learn More</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="box-item">
+            <div class="flip-box">
+              <div class="flip-box-front text-center filter-" style="background-image: url('/static/images/p33.jpg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Awareness Walks</h3>
+                  <p>Arrange walks or parades to raise awareness about specific issues such as health challenges, child protection, or community development.</p>
+                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                </div>
+              </div>
+              <div class="flip-box-back text-center" style="background-image: url('/static/images/p33.jpg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Awareness Walks</h3>
+                  <p>Arrange walks or parades to raise awareness about specific issues such as health challenges, child protection, or community development.</p>
+                  <button class="flip-box-button">Learn More</button>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block hero_project4 %} 
+
+    <section>
+      <div style="text-align: center;margin-top: -1rem;">
+        <h3>Medical Outreach and Awareness Campaigns</h3>
+        <p>?</p>
+      </div>
+      <div class="section-last-project">
+        <div class="container-lastp">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content" style="display: flex;gap:1rem;">
+                      <h3>Vaccination Drives</h3>
+                      <img src="/static/images/vacc1.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Coordinate vaccination drives to increase immunization rates, providing free or low-cost vaccinations to community members.</p>
+                            <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                      <img src="/static/images/vacc2.jpg">
+                        <h3>CodeMedical Symposia</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Host symposiums featuring expert speakers and panel discussions on relevant health topics, encouraging dialogue and knowledge-sharing.</p>
+                            <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                      <img src="/static/images/vacc3.jpeg">
+                        <h3>Emergency Response Drills</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Conduct drills and workshops to prepare communities for emergency situations, educating them on first aid and evacuation procedures.</p>
+                            <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+    </section>
+
+{% endblock %}
+
+{% block hero_project5 %} 
+
+<div class="hero_project2" style="margin-bottom: 200px;">
+
+  <div class="header-pr2">
+      <h3>Empowerment Through Education</h3>
+      <p>?</p>
+  </div>
+  
+  <div class="row1-container-pr2">
+  
+      <div class="box-pr2 red">
+        <h5>Adult Literacy Programs</h5>
+        <p>Develop literacy programs for adults in disadvantaged communities, enhancing their basic education and opening up opportunities for personal growth.</p>
+        <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="">
+      </div>
+  
+      <div class="box-pr2 box-down blue">
+        <h5>Women's Empowerment Initiatives</h5>
+        <p>Implement projects that empower women through education, vocational training, and support networks, promoting gender equality.</p>
+        <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="">
+      </div>
+  
+      <div class="box-pr2 cyan">
+        <h5>Youth Leadership Development</h5>
+        <p>Establish programs to mentor and develop leadership skills among young individuals, fostering the next generation of community leaders.</p>
+        <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
+      </div>
+  
+  </div>
+  
+</div>
 
 {% endblock %}
